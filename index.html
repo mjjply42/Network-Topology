@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+</head>
+<script type="text/javascript" src="https://unpkg.com/vis-network@latest/dist/vis-network.min.js"></script>
+  <link href="https://unpkg.com/vis-network@latest/dist/vis-network.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+  <style type="text/css">
+    #mynetwork {
+      width: 800px;
+      height: 800px;
+    }
+    
+  </style><div id="mynetwork"></div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $.ajax({ url: "/network",
+            error: function(){
+              console.log("Failed");
+            },
+            success: function(data){
+                var nodes = new vis.DataSet([]);
+                data.nodes.forEach((item) => {
+                  if (item['id'] && item['label'])
+                    nodes.add(item);
+                })
+                var edges = new vis.DataSet([]);
+                data.edges.forEach((item) => edges.add(item))
+                  var container = document.getElementById('mynetwork');
+                  var data = {
+                    nodes: nodes,
+                    edges: edges
+                  };
+                  var options = {};
+                  var network = new vis.Network(container, data, options);
+                  }});
+                  });
+  </script>
+<script>  
+   </script>
+</head>
+<body>
+</body>
+</html>

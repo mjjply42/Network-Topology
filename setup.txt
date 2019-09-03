@@ -1,0 +1,19 @@
+Network Connection:
+
+To run the program, just type "Node App". That will start all of the processes based on the configuration files.
+To test a demo response, open up a seperate terminal and 'Curl" one of the open ports: "curl localhost:5000".
+The goal was to get any server setup that was given in the configure files, and then curl request from any port,
+and allow communication through its connected nodes, based on socket communication and open ports. The console
+prints out non duplicate port responses on a single pass through a "network". All paths through every node require
+a slight modification to the code. I did not want to have a long list printing out.
+
+Network Topology:
+
+Going to the browser at the specified port ("localhost:7000"), will show you the current network topology. 
+
+Configure Files:
+Are all stored in the directory Config. More will be added on a later version. This was sent to show the work done.
+As I have spent a too much time getting this solution as is.
+
+Testing:
+The project testing is incomplete. This is the first verson, without testing. I wanted to get this over to you ASAP.
