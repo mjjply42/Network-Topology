@@ -1,0 +1,17 @@
+[
+    {"label": "Drift out of tolerance", "value": 1},
+    {"label": "Accessories missing", "value": 2},
+    {"label": "Loose assembly", "value": 3},
+    {"label": "White pins missing", "value": 4},
+    {"label": "Bottom sub separated", "value": 5},
+    {"label": "Buttons missing", "value": 6},
+    {"label": "Anti-fold back ring missing", "value": 7},
+    {"label": "Pump down ring incorrect install", "value": 8},
+    {"label": "Lower slips broken", "value": 9},
+    {"label": "Upper slips broken", "value": 10},
+    {"label": "Mandrel not bottomed out", "value": 11},
+    {"label": "Gauge ring spaced out", "value": 12},
+    {"label": "Element bulge", "value": 13},
+    {"label": "Cotter pin missing", "value": 14},
+    {"label": "Threaded stopper missing", "value": 15}
+]
